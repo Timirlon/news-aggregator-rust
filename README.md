@@ -31,7 +31,8 @@ Cryptocurrency News Aggregator - is a Rust-based web application that fetches th
 
     - <b> Latest news </b>, where you can find list of related articles and the link to the original source by following <b> Read more </b> button.
 
-## Demo
+
+# Demo
 
 When you start the application, by default you will be greeted with the following screen:
 
@@ -41,9 +42,13 @@ Let's try to type the name of cryptocurrency that we are interested in right in 
 
 ![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/bitcoin-search.png)
 
-We could also try to type other cryptocurrency names. For example meme crypto of Doge Coin:
+We could also try to type other cryptocurrency names. For example, we provide the meme crypto of Doge Coin, and get the following data:
 
 ![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/doge-search.png)
+
+The application also supports the error handling. For instance, if we enter the name of fake or non-existing crypto currency, the application won't be able to fetch any market data and will inform us about that. However, it might still return some news article because it searches based on key words that were provided by user.
+
+![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/search-not-found.png)
 
 ## Technologies Used
 - Backend: 
