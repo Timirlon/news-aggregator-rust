@@ -2,7 +2,7 @@
 
 ## Description
 
-A lightweight, Rust-based web application that aggregates the latest cryptocurrency news from multiple trusted sources. Users can search by cryptocurrency name or symbol to get real-time news articles with concise summaries, source info, and publication dates.
+Cryptocurrency News Aggregator - is a Rust-based web application that fetches the latest cryptocurrency news and market data from multiple trusted sources. Users can search by cryptocurrency name to get real-time news articles with concise summaries, source info, and publication dates as well as market data such as price and capitalization of the provided currency.
 
 ## Key Features
 
@@ -26,22 +26,42 @@ A lightweight, Rust-based web application that aggregates the latest cryptocurre
 
     Latest news articles.
 
-3. Everything is displayed on the same page with clean and responsive design
+3. Fetched data is displayed on the same page and divided into two following columns:
+    - <b> Market Data </b>, where you can find such info as price and market cap. of provided token, 
 
-## Technologies
-- Backend: Rust
+    - <b> Latest news </b>, where you can find list of related articles and the link to the original source by following <b> Read more </b> button.
 
-- Frontend: HTML/CSS
+## Demo
+
+When you start the application, by default you will be greeted with the following screen:
+
+![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/default-screen.png)
+
+Let's try to type the name of cryptocurrency that we are interested in right in the search bar. We will start with bitcoin:
+
+![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/bitcoin-search.png)
+
+We could also try to type other cryptocurrency names. For example meme crypto of Doge Coin:
+
+![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/doge-search.png)
+
+## Technologies Used
+- Backend: 
+  - Rust - programming language
+
+- Frontend: 
+  - HTML/CSS + Bootstrap - layout and design
+  - JS - scripting
 
 
-## APIs Used
-- CoinGecko API
+- APIs
+  - CoinGecko API
   
-  Used to fetch real-time cryptocurrency data such as current price, market capitalization, and token details.
+    Used to fetch real-time cryptocurrency data such as current price, market capitalization, and token details.
 
-- GNews API
+  - GNews API
 
-  Used to fetch recent news articles related to selected cryptocurrencies. Also includes basic date formatting and sentiment tagging.
+    Used to fetch recent news articles related to selected cryptocurrencies. Also includes basic date formatting and sentiment tagging.
 
 ## Installation
 
@@ -66,11 +86,6 @@ Additionally, you need "GNEWS_API_KEY" API key variable  placed in your .env fil
     ```bash
     cargo run
     ```
-
-
-## Demo Screenshots
-
-
 
 
 ## Development Team
