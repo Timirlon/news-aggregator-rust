@@ -46,7 +46,7 @@ We could also try to type other cryptocurrency names. For example, we provide th
 
 ![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/doge-search.png)
 
-The application also supports the error handling. For instance, if we enter the name of fake or non-existing crypto currency, the application won't be able to fetch any market data and will inform us about that. However, it might still return some news article because it searches based on key words that were provided by user.
+The application also supports the error handling. For instance, if we enter the name of fake or non-existent crypto currency, the application won't be able to fetch any market data due to that and will inform us about that. However, it might still return some news article, because the search of article is conducted based on key words that were provided by user.
 
 ![Image not available](https://github.com/Timirlon/news-aggregator-rust/blob/main/demo/search-not-found.png)
 
